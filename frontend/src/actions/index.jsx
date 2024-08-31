@@ -32,7 +32,7 @@ export const removeQuiz = (quizId) => ({
 export const fetchAllQuizzes = () => {
   return (dispatch) => {
     dispatch(setLoading(true));
-    fetch("http://localhost:3000/api/v1/getAllQuizzes")
+    fetch("https://quiz-app-rirw.onrender.com/api/v1/getAllQuizzes")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Network response was not ok");
