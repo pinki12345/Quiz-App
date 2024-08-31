@@ -89,7 +89,7 @@ exports.createQuizOrPoll = async (req, res) => {
       createdDocument = await newPoll.save();
     }
 
-    const link = `http://localhost:5173/quizInterface/${createdDocument._id}`;
+    const link = `https://quiz-app-ashen-three.vercel.app/quizInterface/${createdDocument._id}`;
     res.status(201).json({
       success: true,
       message: `${quizType} created successfully!`,

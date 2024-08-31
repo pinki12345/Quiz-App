@@ -73,7 +73,7 @@ const QuizAnalysis = () => {
   };
 
   const handleShareClick = (quizId) => {
-    const url = `http://localhost:5173/quizInterface/${quizId}`;
+    const url = `https://quiz-app-ashen-three.vercel.app/quizInterface/${quizId}`;
     navigator.clipboard
       .writeText(url)
       .then(() => {
